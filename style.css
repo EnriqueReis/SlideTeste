@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carrossel{
+    height: 620px;
+    width: 320px;
+    margin: 50px auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 2);
+}
+
+.carrossel ul{
+    display: flex;
+    width: 1080px;
+    list-style: none;
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide{
+
+    0%{left:  0px;}
+    20%{left:  0px;}
+
+    40%{left: -360px;}
+    50%{left: -360px;}
+
+    80%{left: -720px;}
+    90%{left: -720px;}
+
+    100%{left: 0px;}
+}
